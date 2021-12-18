@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;1,500&display=swap" rel="stylesheet">
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Carrois+Gothic+SC&display=swap" rel="stylesheet">
+    
+    <script src="https://kit.fontawesome.com/0c5fd83f58.js" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Bvm Engineering College</title>
+</head>
+<body>
+    <section class="course-header" id="header">
+        {{>navigation}}
+
+        <div class="about-text">
+            <h1>OUR COURSES</h1>
+        </div>
+    </section>
+    
+    <section class="course">
+        <h1>courses we offer</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe voluptas corrupti nihil .</p>
+        
+        <div class="row">
+            <div class="course-col">
+                <h2>Mechanical Engineering</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque qui dignissimos quod aut vel! Earum inventore reiciendis exercitationem quaerat, odio magnam asperiores quam veniam temporibus dolores, beatae sunt placeat. Sed corrupti maiores porro, expedita in .</p>
+            </div>
+            <div class="course-col">
+                <h2>Computer Engineering</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque qui dignissimos quod aut vel! Earum inventore reiciendis exercitationem quaerat, odio magnam asperiores quam veniam temporibus dolores, beatae sunt placeat. Sed corrupti maiores porro, expedita in .</p>
+            </div>
+            <div class="course-col">
+                <h2>Electrical Engineering</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque qui dignissimos quod aut vel! Earum inventore reiciendis exercitationem quaerat, odio magnam asperiores quam veniam temporibus dolores, beatae sunt placeat. Sed corrupti maiores porro, expedita in .</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="facilities">
+        <h1>our facilities</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, eligendi.</p>
+        <div class="facilities-row">
+            <div class="facilities-col">
+                <img src="library.png" alt="">
+                <h2>our library</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga perspiciatis labore minus adipisci ipsum atque animi rem, dolorem, sit voluptatibus nam voluptas alias minima. Velit autem tempora beatae itaque animi.</p>
+            </div>
+            
+            <div class="facilities-col">
+                <img src="basketball.png" alt="">
+                <h2>basketball Ground</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga perspiciatis labore minus adipisci ipsum atque animi rem, dolorem, sit voluptatibus nam voluptas alias minima. Velit autem tempora beatae itaque animi.</p>
+            </div>
+            
+            <div class="facilities-col">
+                <img src="cafeteria.png" alt="">
+                <h2>cafetarea</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga perspiciatis labore minus adipisci ipsum atque animi rem, dolorem, sit voluptatibus nam voluptas alias minima. Velit autem tempora beatae itaque animi.</p>
+            </div>
+        </div>
+    </section> 
+
+
+    {{>footer}}
+
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        var headeroverflow=document.getElementById("header");
+        function showMenu(){
+            headeroverflow.style.overflow = "visible";
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu(){
+            navLinks.style.right = " -200px";
+            setTimeout(()=>{
+                headeroverflow.style.overflow="hidden";
+            },1000);
+        }
+    </script>
+</body>
+</html>
